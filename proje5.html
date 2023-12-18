@@ -34,17 +34,40 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
+    <img src="images/menu.png" id="menuBtn">
+<!-- about -->
+    <section id="about">
+        <div class="about-left-col">
+            <img src="images/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, eveniet veritatis architecto modi sed aspernatur hic ad deleniti vitae odit nostrum nihil ullam esse voluptate, quam harum illo minus numquam rerum alias aliquid. Veritatis aliquid ex eaque neque quas dolor reiciendis, soluta eligendi, amet, aspernatur dolore! Totam sunt error nemo debitis iusto fugit sint ex, temporibus at ea illum, accusamus voluptatibus voluptatum voluptate eveniet nesciunt laudantium ab.</p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>Learning is not attained by chance , it must be sought for with ardor not attended to with diligence</h2>
+                <h3>----Eljan Abbasov</h3>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("menuBtn");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {   
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            } else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
 
 
 
